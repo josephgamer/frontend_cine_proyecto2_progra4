@@ -5,6 +5,7 @@
 --%>
 
 <footer>
+    <link rel="stylesheet" href="css/default.css" type="text/css">
     <div>
         <h3>
             Total Soft Inc.&copy; Tsf,Inc

@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30/05/2021, 03:39:28 PM
+    Author     : YENDRI
+*/
+
+header nav {
+    margin: 4px;
+    margin-top: 16px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    
+}
+
+header nav li { 
+    border-radius: 4px;
+    float: left;
+    margin: 0px 4px 0px 4px; 
+    padding: 8px 4px 8px 4px;
+}
+
+header nav li a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: 180px;
+}
+
+header nav li:visited,
+header nav li a:visited {
+    text-decoration: none;
+    color:  black
+}
+
+
+#wrapper #contents {
+    background-position: top right;
+    background-repeat: no-repeat;
+    height: 50px;
+}
+
+footer {
+    margin: 4px;
+    padding: 4px 16px 4px 16px;
+    background-color: #0000cc;
+    text-align: center;
+    min-height: 10vh
+}
+
+h3 {
+    color: #ffffff
+}
+
+input {
+  color: white;
+  padding: 5px 8px;
+  margin: 8px 0;
+  width: 8%;
+  right: 150px 
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 8px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 8%;
+  right: 20px
+}
+
+a {
+    color: black
+}
