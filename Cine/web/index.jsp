@@ -1,5 +1,5 @@
 <%-- 
-    Document   : index
+    
     Created on : 01/06/2021, 03:09:03 PM
     Author     : Esteban
 --%>
@@ -12,12 +12,16 @@
         <title>Cartelera</title>
     </head>
     <body>
-        <h1>Pagina donde se va a desplegar la cartelera</h1>
-        <p>
-            <a href="Login.jsp" >Login</a>
-        </p>
-        <p>
-            <a href="RegistroUsuario.jsp" >Registro</a>
-        </p>
+        <div id="wrapper">
+            <jsp:directive.include file="header.jsp" />
+            <div id="contents">
+
+            </div>
+            <nav>
+                
+            </nav>
+            <jsp:directive.include file="footer.jsp" />
+        </div>
+
     </body>
 </html>
