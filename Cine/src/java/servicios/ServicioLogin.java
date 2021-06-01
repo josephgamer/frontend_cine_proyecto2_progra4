@@ -11,6 +11,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import modelo.beans.Usuario;
 
 /**
  *
@@ -32,15 +33,30 @@ public class ServicioLogin extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet ServicioLogin</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet ServicioLogin at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
+            String user = request.getParameter("uname");
+            String password = request.getParameter("psw");
+            modelo.beans.ConjuntoUsuario cu = new modelo.beans.ConjuntoUsuario();
+            modelo.beans.ConjuntoLogin lu = new modelo.beans.ConjuntoLogin();
+            
+            if (lu.existeUsuario(user, Integer.parseInt(password))) {
+            modelo.beans.Usuario u = new modelo.beans.Usuario();
+            u = cu.obtenerRol(user);
+            switch(u.getRol().getNumRol()){
+                case 1: 
+                    response.sendRedirect("PrincipalAdmin.jsp");
+                    break;
+                case 2:
+                    request.getSession(true).setAttribute("cedula", user);
+                    response.sendRedirect("PrincipalCliente.jsp");
+                    break;
+                default:
+                    response.sendRedirect("index.jsp");
+        }
+            
+        } else {
+            response.sendRedirect("index.jsp");
+        }
+            
         }
     }
 
