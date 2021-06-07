@@ -4,9 +4,17 @@
         <servlet-name>ServicioLogin</servlet-name>
         <servlet-class>servicios.ServicioLogin</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AgregarSala</servlet-name>
+        <servlet-class>servicios.AgregarSala</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServicioLogin</servlet-name>
         <url-pattern>/ServicioLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AgregarSala</servlet-name>
+        <url-pattern>/AgregarSala</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
