@@ -36,5 +36,8 @@
                     </tr>
                 </table>
             </form>
+        <p>
+            <a href="PrincipalAdmin.jsp" >Ir a la pagina principal</a>
+        </p>
     </body>
 </html>
