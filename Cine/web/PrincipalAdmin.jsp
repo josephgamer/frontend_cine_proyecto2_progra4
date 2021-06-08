@@ -17,6 +17,7 @@
             <li><a href="AgregarPelicula.jsp">Agregar Pelicula</a></li>
             <li><a href="AgregarProyeccion.jsp">Agregar Proyeccion</a></li>
             <li><a href="AgregarSala.jsp">Agregar Sala</a></li>
+            <li><a href="VerSala.jsp">Ver Salas Disponibles</a></li>
             <li><a href="Login.jsp">Cerrar Sesion</a></li>
         </ul>
     </body>

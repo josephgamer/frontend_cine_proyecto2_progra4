@@ -8,6 +8,10 @@
         <servlet-name>AgregarSala</servlet-name>
         <servlet-class>servicios.AgregarSala</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>VerSalas</servlet-name>
+        <servlet-class>servicios.VerSalas</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServicioLogin</servlet-name>
         <url-pattern>/ServicioLogin</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>AgregarSala</servlet-name>
         <url-pattern>/AgregarSala</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VerSalas</servlet-name>
+        <url-pattern>/VerSalas</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
