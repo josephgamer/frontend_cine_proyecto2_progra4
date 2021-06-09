@@ -11,13 +11,13 @@ location.href='ServicioLogin';
 
 function init() {
 
-    // Se solicitan los datos al servlet usando cacda uno de los
-    // diferentes métodos.
-    // Las funciones están definidas en sus respectivos archivos.
-
     solicitarDatos("VerSalas", "tabla1", fetchJSON, cargarTabla);
 
     console.log("Aplicación inicializada..");
+}
+
+function initPelis() {
+    solicitarDatos("VerPelis", "tabla2", fetchJSON, cargarTablaPelis);
 }
 
 function solicitarDatos(url, tabla, fn, callback) {
@@ -38,6 +38,24 @@ function cargarTabla(idTabla, datosJSON) {
             nuevaCelda.innerText = v.tipo;
             nuevaCelda = nuevaFila.insertCell(-1);
             nuevaCelda.innerText = v.precio;
+        });
+    }
+}
+
+function cargarTablaPelis(idTabla, datosJSON) {
+    var refTabla = document.getElementById(idTabla);
+    if (refTabla) {
+        var lista = datosJSON.pelis;
+        lista.forEach((v, i, a) => {
+            var nuevaFila = refTabla.insertRow(-1);
+            var nuevaCelda;
+
+            nuevaCelda = nuevaFila.insertCell(-1);
+            nuevaCelda.innerText = v.numpelicula;
+            nuevaCelda = nuevaFila.insertCell(-1);
+            nuevaCelda.innerText = v.descripcion;
+            nuevaCelda = nuevaFila.insertCell(-1);
+            nuevaCelda.innerText = v.foto;
         });
     }
 }

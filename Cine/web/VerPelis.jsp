@@ -11,7 +11,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body>
-        <h1>Hello World!</h1>
+    <body onload="initPelis();">
+        <div class="parte1">
+            <table id="tabla2"></table>
+        </div>
+        <p>
+            <a href="PrincipalAdmin.jsp" >Volver</a>
+        </p>
     </body>
 </html>
