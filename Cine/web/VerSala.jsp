@@ -17,5 +17,8 @@
         <div class="parte1">
             <table id="tabla1"></table>
         </div>
+        <p>
+            <a href="PrincipalAdmin.jsp" >Volver</a>
+        </p>
     </body>
 </html>

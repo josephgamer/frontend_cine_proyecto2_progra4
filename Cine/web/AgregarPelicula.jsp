@@ -9,9 +9,35 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Agregar Pelicula</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <form class='curs' method="GET" action="AgregarPeli">
+                <table class="addSala" action="AgregarPeli">
+                    
+                    <tr>
+                        <td class="etiqueta">Imagen Pelicula:&nbsp;</td>
+                        <td class="campo"> 
+                            <input type="file" name="imagen"
+                                   placeholder="2D, 3D, Imax"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="etiqueta">Nombre Pelicula:&nbsp;</td>
+                        <td class="campo">  
+                            <input name="nombre" id="nombre"
+                                   placeholder="Nombre Pelicula"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="botones">
+                            <button type="submit">Agregar Sala</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        <p>
+            <a href="PrincipalAdmin.jsp" >Ir a la pagina principal</a>
+        </p>
     </body>
 </html>

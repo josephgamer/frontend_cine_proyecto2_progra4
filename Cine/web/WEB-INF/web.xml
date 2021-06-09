@@ -12,6 +12,10 @@
         <servlet-name>VerSalas</servlet-name>
         <servlet-class>servicios.VerSalas</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AgregarPeli</servlet-name>
+        <servlet-class>servicios.AgregarPeli</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServicioLogin</servlet-name>
         <url-pattern>/ServicioLogin</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>VerSalas</servlet-name>
         <url-pattern>/VerSalas</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AgregarPeli</servlet-name>
+        <url-pattern>/AgregarPeli</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
