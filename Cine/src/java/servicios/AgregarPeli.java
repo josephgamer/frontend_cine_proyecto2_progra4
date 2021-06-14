@@ -127,9 +127,67 @@ public class AgregarPeli extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
-        
-        //String imagen = request.getParameter("imagen");
+        //processRequest(request, response);
+        String nombre = request.getParameter("nombre");
+        Pelicula peli = new Pelicula();
+        peli.setDescripcion(nombre);
+        try {
+            Part part = request.getPart("imagen");
+
+                String campo = part.getName();
+                System.out.printf("Nombre del campo (formulario): '%s'%n", campo);
+
+                String nombreArchivo = part.getSubmittedFileName();
+
+                if (nombreArchivo.isEmpty()) {
+                    request.setAttribute("mensaje",
+                            "Se omitió la selección del archivo.");
+                    
+                }
+
+                if (ConjuntoPelicula.validar(nombreArchivo)) {
+                    ConjuntoPelicula g1 = new ConjuntoPelicula();
+                    try {
+                        peli.setTamano((int) part.getSize());
+                        peli.setEntrada(part.getInputStream());
+                        g1.agregarPelicula(peli);
+                    } catch (Exception ex) {
+                        request.setAttribute("mensaje",
+                                String.format("Excepción: '%s'", ex.getMessage()));
+                    }
+                } else {
+                    request.setAttribute("mensaje",
+                            "El formato del archivo es incorrecto.");
+                    
+                }
+            
+            /*Part filePart = request.getPart("imagen");
+            String nombreArchivo = filePart.getSubmittedFileName();
+            if (nombreArchivo.isEmpty()) {
+                request.setAttribute("mensaje",
+                        "Se omitió la selección del archivo.");
+            }
+            if (ConjuntoPelicula.validar(nombreArchivo)) {
+                    ConjuntoPelicula g1 = new ConjuntoPelicula();
+                    try {
+                        peli.setTamano((int) filePart.getSize());
+                        peli.setEntrada(filePart.getInputStream());
+                        g1.agregarPelicula(peli);
+                    } catch (Exception ex) {
+                        request.setAttribute("mensaje",
+                                String.format("Excepción: '%s'", ex.getMessage()));
+                    }
+                } else {
+                    request.setAttribute("mensaje",
+                            "El formato del archivo es incorrecto.");
+                }*/
+        } catch (IOException | ServletException ex) {
+            request.setAttribute("mensaje",
+                    String.format("Ocurrió una excepción: '%s'", ex.getMessage()));
+        }
+
+        //getServletContext().getRequestDispatcher("/AgregarPelicula.jsp").forward(request, response);
+        response.sendRedirect("AgregarPelicula.jsp");
         
     }
 
