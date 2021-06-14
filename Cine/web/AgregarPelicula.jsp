@@ -12,8 +12,8 @@
         <title>Agregar Pelicula</title>
     </head>
     <body>
-        <form class='curs' method="GET" action="AgregarPeli">
-                <table class="addSala" action="AgregarPeli">
+        <form class='curs' method="POST" action="AgregarPeli" enctype="multipart/form-data">
+                <table class="addSala" >
                     
                     <tr>
                         <td class="etiqueta">Imagen Pelicula:&nbsp;</td>
@@ -31,7 +31,7 @@
                     </tr>
                     <tr>
                         <td colspan="2" class="botones">
-                            <button type="submit">Agregar Sala</button>
+                            <button type="submit">Agregar Pelicula</button>
                         </td>
                     </tr>
                 </table>

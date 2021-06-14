@@ -9,7 +9,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Ver Peliculas Disponibles</title>
+        <script src="js/getJSON.js" type="text/javascript"></script>
+        <script src="js/scripts.js" type="text/javascript"></script>
     </head>
     <body onload="initPelis();">
         <div class="parte1">
