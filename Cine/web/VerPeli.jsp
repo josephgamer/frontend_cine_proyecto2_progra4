@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="galeria" uri="/WEB-INF/tlds/galeria" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,11 +13,14 @@
         <title>Ver Peliculas Disponibles</title>
         <script src="js/getJSON.js" type="text/javascript"></script>
         <script src="js/scripts.js" type="text/javascript"></script>
+        <link href="css/img.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body onload="initPelis();">
-        <div class="parte1">
+    <body>
+        <!--div class="parte1">
             <table id="tabla2"></table>
-        </div>
+        </div-->
+        <jsp:useBean id="g1" class="modelo.beans.ConjuntoPelicula" scope="application"></jsp:useBean>
+        ${galeria:obtenerGaleria(g1, 5)}
         <p>
             <a href="PrincipalAdmin.jsp" >Volver</a>
         </p>
