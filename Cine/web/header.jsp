@@ -6,7 +6,7 @@
 
 
 <header>
-    <link rel="stylesheet" href="css/default.css" type="text/css">
+    <link rel="stylesheet" href="css/principal.css" type="text/css">
     <div id="wrapper">
         <header>
             <nav>
