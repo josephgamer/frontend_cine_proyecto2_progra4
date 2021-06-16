@@ -20,6 +20,10 @@
         <servlet-name>VerPelis</servlet-name>
         <servlet-class>servicios.VerPelis</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AgregarProyeccion</servlet-name>
+        <servlet-class>servicios.AgregarProyeccion</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServicioLogin</servlet-name>
         <url-pattern>/ServicioLogin</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>VerPelis</servlet-name>
         <url-pattern>/VerPelis</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AgregarProyeccion</servlet-name>
+        <url-pattern>/AgregarProyeccion</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
