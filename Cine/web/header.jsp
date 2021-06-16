@@ -18,7 +18,7 @@
                         <a href="contacto.jsp">Contact us</a>
                     </li>
                     <li>
-                        <a href="RegistroUsuario.jsp">Register</a>
+                        <a href="Registro.jsp">Register</a>
                     </li>
                     <li>
                         <a href="Login.jsp">Login</a>

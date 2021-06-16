@@ -68,16 +68,6 @@ input {
   right: 150px 
 }
 
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 5px 8px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 8%;
-  right: 20px
-}
 
 a {
     color: black

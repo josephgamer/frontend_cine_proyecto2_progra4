@@ -1,0 +1,90 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16/06/2021, 04:07:59 PM
+    Author     : YENDRI
+*/
+
+body {
+}
+
+#wrapper {
+    font-family: Raleway;
+    font-size: 12pt;
+}
+
+#contents {
+    padding: 4px 24px;
+}
+
+header {
+    /*background-color: slategray;*/
+    padding: 4px 24px;
+}
+
+header h1 {
+    font-family: RalewayBold;
+    font-size: 18pt;
+    margin: 8px 0px;
+}
+
+nav {
+    border-bottom: 1px solid darkslategray;
+    margin-bottom: 16px;
+    padding: 4px 24px;
+}
+
+
+.formulario  {
+    border: 1px solid gray;
+}
+
+.formulario  td {
+    padding: 4px 16px;
+}
+
+.formulario .etiqueta {
+    text-align: right;
+}
+
+.formulario .campo {
+}
+
+.formulario .botones {
+    border-top: 1px solid gray;
+    padding: 16px;
+    text-align: center;
+}
+
+.usu {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+p1 {
+    text-align: center;
+}
+
+.volver {
+    text-align: center;
+}
+
+footer {
+    margin: 4px;
+    padding: 4px 16px 4px 16px;
+    background-color: #0000cc;
+    text-align: center;
+    min-height: 10vh
+}
