@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/principal.css" type="text/css">
     <div>
         <h3>
-            Total Soft Inc.&copy; Tsf,Inc
+            Total Soft Inc. &copy; Tsf, Inc
         </h3>
     </div>
 </footer>

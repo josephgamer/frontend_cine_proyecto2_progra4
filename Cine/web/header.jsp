@@ -28,7 +28,6 @@
                                id="search" name="search" autocomplete="off" 
                                placeholder=" Search"/>
                     </td>
-                    
                     <td id="b1" class="controles" colspan="2"> 
                         <button style="position: absolute; right: 1;" type="button">Search movies</button>
                     </td>
@@ -36,4 +35,10 @@
             </nav>
         </header>
     </div>
+    
+         <div class="logo">
+        
+        <img src="images/header.png">
+    </div> 
+    
 </header>
