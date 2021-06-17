@@ -12,15 +12,18 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>NCG Cinema</title>
         <link href="css/principal.css" rel="stylesheet" type="text/css"/>
+        <link href="css/img.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div id="wrapper">
             <jsp:directive.include file="header.jsp" />
             <div id="contents">
-                <section id="cartelera">
-                    <jsp:useBean id="g2" class="modelo.beans.ConjuntoProyeccion" scope="application"></jsp:useBean>
-                    ${cartelera:obtenerCartelera(g2, 6)}
-                </section>
+                <main>
+                    <section id="cartelera">
+                        <jsp:useBean id="g2" class="modelo.beans.ConjuntoProyeccion" scope="application"></jsp:useBean>
+                        ${cartelera:obtenerCartelera(g2, 6)}
+                    </section>
+                </main>
             </div>
             <nav>
 
