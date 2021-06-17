@@ -53,14 +53,13 @@ public class AgregarProyeccion extends HttpServlet {
         } catch (ParseException ex) {
             Logger.getLogger(AgregarProyeccion.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+        ch.addSchedule(h);
         sala.setNumSala(Integer.parseInt(request.getParameter("sala")));
         h.setNumHorario(ch.returnLastHorario());
         peli.setNumpelicula(Integer.parseInt(request.getParameter("peli")));
         proyeccion.setHorario(h);
         proyeccion.setPelicula(peli);
         proyeccion.setSala(sala);
-        ch.addSchedule(h);
         cpr.addProyeccion(proyeccion);
         response.sendRedirect("AgregarProyeccion.jsp");
         
