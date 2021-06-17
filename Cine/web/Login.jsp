@@ -27,7 +27,7 @@
                 <input type="password" placeholder="Enter Password" name="psw" required 
                        style="display: block; margin: 0 auto; text-align:center; width:400px; height:30px">
 
-                <p></p>
+                <p ></p>
 
                 <button type="submit" style="display: block; margin: 0 auto; width:200px; height:40px" 
                         onclick="redireccionLogin()">Login</button>

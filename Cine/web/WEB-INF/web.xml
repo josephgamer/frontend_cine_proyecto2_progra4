@@ -24,6 +24,10 @@
         <servlet-name>AgregarProyeccion</servlet-name>
         <servlet-class>servicios.AgregarProyeccion</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>VerProyeccion</servlet-name>
+        <servlet-class>servicios.VerProyeccion</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServicioLogin</servlet-name>
         <url-pattern>/ServicioLogin</url-pattern>
@@ -47,6 +51,10 @@
     <servlet-mapping>
         <servlet-name>AgregarProyeccion</servlet-name>
         <url-pattern>/AgregarProyeccion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VerProyeccion</servlet-name>
+        <url-pattern>/VerProyeccion</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
