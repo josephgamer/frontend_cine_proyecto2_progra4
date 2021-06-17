@@ -16,7 +16,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import modelo.beans.ConjuntoLogin;
 import modelo.beans.ConjuntoUsuario;
+import modelo.beans.Login;
 import modelo.beans.Rol;
 import modelo.beans.Usuario;
 
@@ -50,6 +52,15 @@ public class RegistroUsuario extends HttpServlet {
         ConjuntoUsuario cu
                     = (ConjuntoUsuario) getServletContext().getAttribute("usuarios");
         cu.agregar(usuario);
+        
+        Login login = new Login();
+        login.setUsuario(usuario);
+        login.setClave(Integer.parseInt(request.getParameter("Contraseña")));
+        
+        ConjuntoLogin cl = new ConjuntoLogin();
+        
+        cl.agregar(login);
+                
         response.sendRedirect("index.jsp");
     }
 

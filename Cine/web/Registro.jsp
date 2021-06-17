@@ -48,6 +48,13 @@
                                    placeholder="(apellido)"/>
                         </td>
                     </tr>
+                     <tr>
+                        <td class="etiqueta">Contraseña:&nbsp;</td>
+                        <td class="campo"> 
+                            <input name="Contraseña" type="password"
+                                   placeholder="(contraseña)"/>
+                        </td>
+                    </tr>
                     <tr>
                         <td colspan="2" class="botones">
                             <button type="submit">Registrar</button>
