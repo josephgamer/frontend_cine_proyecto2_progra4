@@ -13,6 +13,8 @@
         <title>NCG Cinema</title>
         <link href="css/principal.css" rel="stylesheet" type="text/css"/>
         <link href="css/img.css" rel="stylesheet" type="text/css"/>
+        <link href="css/Pop.css" rel="stylesheet" type="text/css"/>
+        <script src="js/PopupMenu.js" type="text/javascript"></script>
     </head>
     <body>
         <div id="wrapper">
@@ -24,6 +26,11 @@
                         ${cartelera:obtenerCartelera(g2, 6)}
                     </section>
                 </main>
+            </div>
+            <div id="page-mask">
+                <div id="pop-up" onclick="alternar();">
+                    <img id="pop-up-img" src="images/cat0.png" alt="">
+                </div>
             </div>
             <nav>
 
