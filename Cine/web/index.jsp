@@ -15,6 +15,8 @@
         <link href="css/img.css" rel="stylesheet" type="text/css"/>
         <link href="css/Pop.css" rel="stylesheet" type="text/css"/>
         <script src="js/PopupMenu.js" type="text/javascript"></script>
+        <script src="js/tablero.js" type="text/javascript"></script>
+        <script src="js/cargarTabla2.js" type="text/javascript"></script>
     </head>
     <body>
         <div id="wrapper">
@@ -29,7 +31,7 @@
             </div>
             <div id="page-mask">
                 <div id="pop-up" onclick="alternar();">
-                    <img id="pop-up-img" src="images/cat0.png" alt="">
+                    <img id="pop-up-img"  alt="">
                 </div>
             </div>
             <nav>

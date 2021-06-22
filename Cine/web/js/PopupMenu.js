@@ -29,6 +29,9 @@ function mostrar(idx) {
             case 3:
                 ref.src = "images/cat3.jpg";
                 break;
+            case 4:
+                window.onload =  new init2();
+                break;
             default:
                 ref.src = "images/cat0.png";
         }

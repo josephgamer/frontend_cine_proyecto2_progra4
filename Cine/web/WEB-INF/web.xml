@@ -28,6 +28,10 @@
         <servlet-name>VerProyeccion</servlet-name>
         <servlet-class>servicios.VerProyeccion</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ApartarProyeccion</servlet-name>
+        <servlet-class>servicios.ApartarProyeccion</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServicioLogin</servlet-name>
         <url-pattern>/ServicioLogin</url-pattern>
@@ -55,6 +59,10 @@
     <servlet-mapping>
         <servlet-name>VerProyeccion</servlet-name>
         <url-pattern>/VerProyeccion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ApartarProyeccion</servlet-name>
+        <url-pattern>/ApartarProyeccion</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
