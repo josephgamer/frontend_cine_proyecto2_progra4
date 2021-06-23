@@ -17,6 +17,7 @@
         <script src="js/PopupMenu.js" type="text/javascript"></script>
         <script src="js/tablero.js" type="text/javascript"></script>
         <script src="js/cargarTabla2.js" type="text/javascript"></script>
+        <link href="css/tabla.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div id="wrapper">
