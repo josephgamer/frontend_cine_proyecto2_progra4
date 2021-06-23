@@ -32,6 +32,10 @@
         <servlet-name>ApartarProyeccion</servlet-name>
         <servlet-class>servicios.ApartarProyeccion</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AgregarTiquete</servlet-name>
+        <servlet-class>servicios.AgregarTiquete</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServicioLogin</servlet-name>
         <url-pattern>/ServicioLogin</url-pattern>
@@ -63,6 +67,10 @@
     <servlet-mapping>
         <servlet-name>ApartarProyeccion</servlet-name>
         <url-pattern>/ApartarProyeccion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AgregarTiquete</servlet-name>
+        <url-pattern>/AgregarTiquete</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

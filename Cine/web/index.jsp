@@ -19,27 +19,36 @@
         <script src="js/cargarTabla2.js" type="text/javascript"></script>
         <link href="css/tabla.css" rel="stylesheet" type="text/css"/>
     </head>
+    <jsp:directive.include file="header.jsp" />
     <body>
+
         <div id="wrapper">
-            <jsp:directive.include file="header.jsp" />
+
             <div id="contents">
                 <main>
-                    <section id="cartelera">
-                        <jsp:useBean id="g2" class="modelo.beans.ConjuntoProyeccion" scope="application"></jsp:useBean>
-                        ${cartelera:obtenerCartelera(g2, 6)}
-                    </section>
+                    <form method="GET" action="AgregarTiquete">
+                        <section id="cartelera">
+                            <jsp:useBean id="g2" class="modelo.beans.ConjuntoProyeccion" scope="application"></jsp:useBean>
+                            ${cartelera:obtenerCartelera(g2, 6)}
+                        </section>
+                    </form>
                 </main>
             </div>
-            <div id="page-mask">
-                <div id="pop-up" onclick="alternar();">
-                    <img id="pop-up-img"  alt="">
+            <form method="GET" action="AgregarTiquete">
+                <div id="page-mask">
+                    <div id="pop-up" onclick="alternar();">
+                        <img id="pop-up-img"  alt="">
+                    </div>
                 </div>
-            </div>
+            </form>
             <nav>
 
             </nav>
-            <jsp:directive.include file="footer.jsp" />
+
         </div>
 
     </body>
+    <nav>
+        <jsp:directive.include file="footer.jsp" />
+    </nav>
 </html>

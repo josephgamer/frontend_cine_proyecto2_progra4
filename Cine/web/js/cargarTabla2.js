@@ -11,7 +11,7 @@ function init2() {
     console.log(t);
 
     /*document.getElementById('fecha').textContent =
-            dayjs().format('YYYY-MM-DD, HH:mm:ss');*/
+     dayjs().format('YYYY-MM-DD, HH:mm:ss');*/
 
     construirTablero(t);
     //actualizar();
@@ -35,7 +35,7 @@ function construirTablero(t) {
             for (let j = 0; j < t.n(); j++) {
                 celda = document.createElement('TD');
                 var btn = document.createElement('BUTTON');
-                btn.setAttribute('type', 'button');
+                btn.setAttribute('type', 'submit');
                 btn.setAttribute('class', 'btnTablero');
                 btn.setAttribute('name', 'posicion');
                 btn.setAttribute('valor_fila', i);
@@ -47,7 +47,7 @@ function construirTablero(t) {
                     cambiarEstado(f, c);
                     actualizar();
                     cambiarColor(f, c);
-                    //volverAColorNormal(f, c);
+                    redireccionTiquete();
                     console.log({f: f, c: c});
                 });
 
@@ -73,14 +73,18 @@ function cambiarEstado(i, j) {
         t.k++;
         //cambiarBola.setAttribute('src', 'css/images/silver-red-ball (sm).png');
     } /*else {
-        t.k--;
-        //cambiarBola.setAttribute('src', 'css/images/silver-ball (sm).png');
-    }*/
+     t.k--;
+     //cambiarBola.setAttribute('src', 'css/images/silver-ball (sm).png');
+     }*/
 
 }
 
 function actualizar() {
     mostrarDatos(t);
+}
+
+function redireccionTiquete(){
+location.href='AgregarTiquete';
 }
 
 function mostrarDatos(t) {
@@ -116,20 +120,14 @@ function cambiarColor(f, c) {
         var imagen = boton.firstChild;
         imagen.setAttribute('src', 'images/silver-red-ball (sm).png');
     } /*else {
-        var celda = tabla.rows[f].cells[c];
-        var boton = celda.firstChild;
-        var imagen = boton.firstChild;
-        imagen.setAttribute('src', 'images/silver-ball (sm).png');
-    }*/
+     var celda = tabla.rows[f].cells[c];
+     var boton = celda.firstChild;
+     var imagen = boton.firstChild;
+     imagen.setAttribute('src', 'images/silver-ball (sm).png');
+     }*/
 }
 
-function volverAColorNormal(f, c) {
-    var tabla = document.getElementById('bolitas');
-    var celda = tabla.rows[f].cells[c];
-    var boton = celda.firstChild;
-    var imagen = boton.firstChild;
-    imagen.setAttribute('src', 'css/images/silver-ball (sm).png');
-}
+
 
 function reiniciar() {
     t.reiniciar();
