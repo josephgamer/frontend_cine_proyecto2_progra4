@@ -47,8 +47,10 @@
 
         </div>
 
-    </body>
+    
     <nav>
-        <jsp:directive.include file="footer.jsp" />
+        
     </nav>
+    </body>
+    <jsp:directive.include file="footer.jsp" />
 </html>
