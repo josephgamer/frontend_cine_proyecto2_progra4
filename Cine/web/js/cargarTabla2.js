@@ -35,7 +35,7 @@ function construirTablero(t) {
             for (let j = 0; j < t.n(); j++) {
                 celda = document.createElement('TD');
                 var btn = document.createElement('BUTTON');
-                btn.setAttribute('type', 'submit');
+                btn.setAttribute('type', 'button');
                 btn.setAttribute('class', 'btnTablero');
                 btn.setAttribute('name', 'posicion');
                 btn.setAttribute('valor_fila', i);

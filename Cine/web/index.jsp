@@ -30,6 +30,7 @@
                         <section id="cartelera">
                             <jsp:useBean id="g2" class="modelo.beans.ConjuntoProyeccion" scope="application"></jsp:useBean>
                             ${cartelera:obtenerCartelera(g2, 6)}
+                            <jsp:directive.include file="footer.jsp" />
                         </section>
                     </form>
                 </main>
@@ -41,16 +42,17 @@
                     </div>
                 </div>
             </form>
+            
             <nav>
 
             </nav>
 
         </div>
 
-    
-    <nav>
-        
-    </nav>
+
+        <nav>
+
+        </nav>
     </body>
-    <jsp:directive.include file="footer.jsp" />
+
 </html>
