@@ -21,7 +21,7 @@ and open the template in the editor.
 }
 
 #pop-up-img {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -47,3 +47,4 @@ and open the template in the editor.
     cursor: pointer;
     width: 50%;
 }
+
