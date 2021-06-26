@@ -57,7 +57,7 @@ public class AgregarTiquete extends HttpServlet {
         
         ConjuntoTiquete ct = new ConjuntoTiquete();
         ct.agregarTiquete(tiquete);
-        response.sendRedirect("index.jsp");
+        response.sendRedirect("PrincipalCliente.jsp");
      
         
     }
