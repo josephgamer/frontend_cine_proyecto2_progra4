@@ -31,11 +31,14 @@
                     <button style="position: absolute; right: 1;" type="button">Search movies</button>
                 </td>
                 <p>
-            <!--label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label-->
-            <a href="index.jsp" >Cerrar sesión</a>
-        </p>
+                    <!--label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label-->
+                    <a href="index.jsp" >Cerrar sesión</a>
+                </p>
+                <p >
+                    <a href=".jsp" >Descargar tiquete</a>
+                </p>
             </div>
             <div id="wrapper">
 
@@ -45,6 +48,11 @@
                             <section id="cartelera">
                                 <jsp:useBean id="g2" class="modelo.beans.ConjuntoProyeccion" scope="application"></jsp:useBean>
                                 ${cartelera:obtenerCartelera(g2, 6)}
+                                <% String cedula = request.getSession(true).getAttribute("cedula").toString();
+                                    out.println(cedula);
+                                    request.getSession(true).setAttribute("idUsuario", cedula);
+                                %>
+
                             </section>
                         </form>
                     </main>
@@ -60,5 +68,5 @@
             </div>
 
         </body>
-    
+
 </html>
