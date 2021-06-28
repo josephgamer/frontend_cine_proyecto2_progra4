@@ -35,10 +35,4 @@
             </nav>
         </header>
     </div>
-
-    <div class="logo">
-
-        <img src="images/header.png">
-    </div> 
-
 </header>

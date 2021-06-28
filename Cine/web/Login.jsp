@@ -15,11 +15,11 @@
     <body>
         <form action="ServicioLogin" method="post">
             <div class="imgcontainer">
-                <img src="images/descarga.png" alt="Avatar" class="avatar" width="250" height="250">
+                <img src="images/gabi con hambre.gif" alt="Avatar" class="avatar" width="250" height="250">
             </div>
 
             <div class="container">
-                <label for="uname"><p style=" text-align: center"><b>Username</b></p></label>
+                <label for="uname"> <p style=" text-align: center"> <b>Username</b></p></label>
                 <input type="text" placeholder="Enter Username" name="uname" 
                        style="display: block; margin: 0 auto; text-align:center; width:396px; height:30px">
 

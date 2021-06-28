@@ -9,12 +9,13 @@ and open the template in the editor.
 */
 
 .tablero {
-    margin: 4px 8px 8px 32px;
+    margin: 4px 8px 16px 32px;
+    
 }
 
 .tablero .btnTablero {
-    background-color: white;
-    border: none;
+    background-color: transparent;
+    border: blue;
     cursor: pointer;
     outline: none;
     height: 48px;
@@ -22,8 +23,8 @@ and open the template in the editor.
 }
 
 .tablero .btnTablero img {
-    margin: 0px;
-    padding: 0px;
+    margin: 4px 8px 16px 32px;
+    padding: 5px 8px;
 }
 
 

@@ -31,28 +31,28 @@
                         <td class="campo">  
                             <input type="number" name="Id"
                                    min=100010001 max=999999999
-                                   placeholder="(id)"/>
+                                   placeholder="(ID)"/>
                         </td>
                     </tr>
                     <tr>
                         <td class="etiqueta">Nombre:&nbsp;</td>
                         <td class="campo">
                             <input name="Nombre" 
-                                   placeholder="(nombre)"/> 
+                                   placeholder="(Nombre)"/> 
                         </td>
                     </tr>
                     <tr>
                         <td class="etiqueta">Apellido:&nbsp;</td>
                         <td class="campo"> 
                             <input name="Apellido"
-                                   placeholder="(apellido)"/>
+                                   placeholder="(Apellido)"/>
                         </td>
                     </tr>
                      <tr>
                         <td class="etiqueta">Contraseña:&nbsp;</td>
                         <td class="campo"> 
                             <input name="Contraseña" type="password"
-                                   placeholder="(contraseña)"/>
+                                   placeholder="(Numerico)"/>
                         </td>
                     </tr>
                     <tr>

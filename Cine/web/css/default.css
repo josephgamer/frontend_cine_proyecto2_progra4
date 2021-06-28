@@ -20,6 +20,8 @@ input[type=text], input[type=password] {
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  color: black;
+  
 }
 
 /* Set a style for all buttons */
@@ -90,6 +92,7 @@ span.psw {
 header {
     background-color: slategray;
     padding: 4px 15px;
+    
 }
 
 header h1 {
