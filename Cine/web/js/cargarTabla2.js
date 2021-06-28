@@ -47,7 +47,6 @@ function construirTablero(t) {
                     cambiarEstado(f, c);
                     actualizar();
                     cambiarColor(f, c);
-                    redireccionTiquete();
                     console.log({f: f, c: c});
                 });
 

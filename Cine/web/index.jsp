@@ -20,10 +20,10 @@
         <link href="css/tabla.css" rel="stylesheet" type="text/css"/>
     </head>
     <jsp:directive.include file="header.jsp" />
-    <body>
+    <body background ="images/principal.png">
 
         <div id="wrapper">
-
+            
             <div id="contents">
                 <main>
                     <form method="GET" action="AgregarTiquete">

@@ -33,33 +33,35 @@ public class AgregarTiquete extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        
-        Integer proyeccion = Integer.parseInt(request.getParameter("proyeccion"));
-        String fila = request.getParameter("valor_fila");
-        String columna = request.getParameter("valor_columna");
-        System.out.println(proyeccion + ", " + fila + ", " + columna);
-        String cedula = request.getSession(true).getAttribute("idUsuario").toString();
-        
-        Usuario usuario = new Usuario();
-        usuario.setIdUsuario(cedula);
-        
-        Proyeccion proyeccion1 = new Proyeccion();
-        proyeccion1.setNumProyeccion(proyeccion);
-        
-        
-       
-        
-        Tiquete tiquete = new Tiquete();
-        tiquete.setUsuario(usuario);
-        tiquete.setProyeccion(proyeccion1);
-        tiquete.setAsiento(0);
-        tiquete.setTotalPagar(0);
-        
-        ConjuntoTiquete ct = new ConjuntoTiquete();
-        ct.agregarTiquete(tiquete);
-        response.sendRedirect("PrincipalCliente.jsp");
-     
-        
+
+        try {
+            Integer proyeccion = Integer.parseInt(request.getParameter("proyeccion"));
+            String cedula = "";
+            if (request.getSession(true).getAttribute("idUsuario").toString() != null) {
+                cedula = request.getSession(true).getAttribute("idUsuario").toString();
+            }
+
+            if (cedula != null) {
+                Usuario usuario = new Usuario();
+                usuario.setIdUsuario(cedula);
+
+                Proyeccion proyeccion1 = new Proyeccion();
+                proyeccion1.setNumProyeccion(proyeccion);
+
+                Tiquete tiquete = new Tiquete();
+                tiquete.setUsuario(usuario);
+                tiquete.setProyeccion(proyeccion1);
+                tiquete.setAsiento(0);
+                tiquete.setTotalPagar(0);
+
+                ConjuntoTiquete ct = new ConjuntoTiquete();
+                ct.agregarTiquete(tiquete);
+                response.sendRedirect("PrincipalCliente.jsp");
+            }
+        } catch (NullPointerException | NumberFormatException ex) {
+            response.sendRedirect("index.jsp");
+        }
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
