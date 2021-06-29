@@ -24,7 +24,7 @@ function construirTablero(t) {
     if (refSeccion) {
         var tabla = document.createElement('TABLE');
         tabla.setAttribute('class', 'tablero');
-
+        var button = document.createElement('BUTTON');
         tabla.appendChild(document.createElement('THEAD'));
         var contenido = document.createElement('TBODY');
         contenido.setAttribute("id", "bolitas");
@@ -60,7 +60,11 @@ function construirTablero(t) {
             }
             contenido.appendChild(fila);
         }
+        fila = document.createElement('TR');
+        button.setAttribute('type','button');
+        button.innerHTML = "Comprar";
         tabla.appendChild(contenido);
+        tabla.appendChild(button);
         refSeccion.appendChild(tabla);
     }
 }
