@@ -52,7 +52,7 @@ function construirTablero(t) {
 
                 var img = document.createElement('IMG');
                 img.setAttribute('id', 'bola');
-                img.setAttribute('src', 'images/silver-ball (sm).png');
+                img.setAttribute('src', 'images/silla3.jpg');
                 btn.appendChild(img);
 
                 celda.appendChild(btn);
@@ -117,7 +117,7 @@ function cambiarColor(f, c) {
         var celda = tabla.rows[f].cells[c];
         var boton = celda.firstChild;
         var imagen = boton.firstChild;
-        imagen.setAttribute('src', 'images/silver-red-ball (sm).png');
+        imagen.setAttribute('src', 'images/silla2.jpg');
     } /*else {
      var celda = tabla.rows[f].cells[c];
      var boton = celda.firstChild;

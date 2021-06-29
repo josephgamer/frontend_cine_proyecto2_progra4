@@ -23,7 +23,7 @@
     <body background ="images/principal.png">
 
         <div id="wrapper">
-            
+
             <div id="contents">
                 <main>
                     <form method="GET" action="AgregarTiquete">
@@ -37,12 +37,17 @@
             </div>
             <form method="GET" action="AgregarTiquete">
                 <div id="page-mask">
+
                     <div id="pop-up" onclick="alternar();">
                         <img id="pop-up-img"  alt="">
                     </div>
+
+                    <center>
+                        <img src="images/fondoAzul.jpeg" alt=""/>
+                    </center>
                 </div>
             </form>
-            
+
             <nav>
 
             </nav>

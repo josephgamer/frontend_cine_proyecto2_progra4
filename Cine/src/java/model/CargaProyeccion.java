@@ -7,7 +7,7 @@ package model;
 
 import java.io.IOException;
 import java.io.OutputStream;
-import jakarta.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpServletResponse;
 import modelo.beans.ConjuntoProyeccion;
 import modelo.beans.Pelicula;
 import utilities.IOUtilities;
